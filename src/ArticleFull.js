@@ -7,7 +7,7 @@ function ArticleFull() {
     const [article, setArticle] = useState(null);
 
     useEffect(function() {
-        axios.get(`https://said-27044-default-rtdb.firebaseio.com/articles/${ id }.json`)
+        axios.get(`https://said-27044-default-rtdb.firebaseio.com/articles.json`)
             .then(({ data }) => setArticle(data));
     }, []);
 
